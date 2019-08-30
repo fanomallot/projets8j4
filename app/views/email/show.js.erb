@@ -1,4 +1,11 @@
 $(document).ready(function() {
 	$(".mail").hide()
 	$(".rb").append("<%= j render 'show' , email: @email %>").hide().fadeIn(1000);
+	$("#<%=@email.id%>").css({"font-weight":"15"} );
+	$(".btn-secondary").on('click',function() {
+		$(this).fadeOut(1000, function() {
+			$(this).remove();
+		});
+		
+	});
 });

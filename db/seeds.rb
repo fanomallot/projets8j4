@@ -19,6 +19,7 @@ require 'faker'
 end
 10.times do 
 	my_email = Email.create(object: Faker::Book.title ,
-							body: Faker::Hipster.paragraph)
+							body: Faker::Hipster.paragraph,
+              read: false)
 end
 puts "email enregistré"

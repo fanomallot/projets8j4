@@ -34,7 +34,7 @@
   width: 550px;
 }
 .button {
-  background-color: #4CAF50; /* Green */
+/* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -45,4 +45,19 @@
   margin: 4px 20px;
   cursor: pointer;
   border-radius: 5px;
+}
+.btn-success{
+  background-color: #4CAF50; /* Green */
+}
+.btn-danger{
+  background-color: red;
+}
+.btn-secondary{
+  background-color: gray;
+}
+.gras{
+  font-weight: bold;
+}
+.center{
+  text-align: center;
 }
