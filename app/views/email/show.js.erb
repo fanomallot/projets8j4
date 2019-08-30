@@ -1,0 +1,4 @@
+$(document).ready(function() {
+	$(".mail").hide()
+	$(".rb").append("<%= j render 'show' , email: @email %>").hide().fadeIn(1000);
+});

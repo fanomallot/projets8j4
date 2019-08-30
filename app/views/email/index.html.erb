@@ -1,0 +1,21 @@
+<head>
+<style>
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+ 
+  <div class="grid-item rk">
+  	<h1>Voici la liste des emails</h1>
+  	<%@email.each do |email|%>
+  	<%=link_to "#{email.object}" , email_path(email.id),remote: true %></br>
+  	<%end%>
+  	
+  </div>  
+  <div class="grid-item rb">
+  </div>  
+</div>
+  <%=link_to "recevoir un email", email_index_path, method:'post',class:'button',remote: true%>
+</body>
+

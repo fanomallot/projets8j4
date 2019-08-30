@@ -1,0 +1,48 @@
+@import "variables/personal_variables";
+@import "variables/bootstrap_variables";
+
+@import "bootstrap";
+@import "font-awesome";
+@import "components/*";
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 30px;
+  
+}
+.rk{
+ width: 1200px;
+
+}
+.rb{
+  position: fixed;
+  right: 10px;
+  height: 750px;
+  overflow-y: scroll;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  width: 550px;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
