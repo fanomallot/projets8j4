@@ -1,11 +1,17 @@
 $(document).ready(function() {
-	$(".mail").hide()
+	$(".mail").hide();
 	$(".rb").append("<%= j render 'show' , email: @email %>").hide().fadeIn(1000);
 	$("#<%=@email.id%>").css({"font-weight":"15"} );
+	$(".new").fadeOut(10);
 	$(".btn-secondary").on('click',function() {
-		$(this).fadeOut(1000, function() {
-			$(this).remove();
-		});
-		
+		$(this).fadeOut(100);
+		$(".new").hide().fadeIn(1000);
+		$("#<%=@email.id%>").css({"font-weight":"bold"});
 	});
+	$(".new").on('click',function() {
+		$(this).hide();
+		$(".btn-secondary").hide().fadeIn(1000);
+		$("#<%=@email.id%>").css({"font-weight":"normal"});
+	});
+
 });

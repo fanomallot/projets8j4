@@ -2,10 +2,9 @@
   	<%=@email.object%></br>
   	<%=@email.body%></br>
   	<%=link_to 'supr' ,email_path(@email),method:'delete',class:'button btn-danger',remote:true%>
-  	<%if @email.read == true%>
+ 
   		<%=link_to 'marquer comme non lue',email_path(@email),class:'button btn-secondary',method:'put',remote:true%>
-  	<%else%>
-  		<%=link_to 'marquer comme lue',email_path(@email),class:'button btn-success',method:'put',remote:true%>
-  	<%end%>
+  
+  		<%=link_to 'marquer comme lue',email_path(@email),class:'button btn-success new',method:'put',remote:true%>
 
 </p>
